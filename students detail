@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brilicaservices.studentdetails.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STUDENT DETAILS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/name_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:ems="5"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp" />
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="enter your name"
+        android:inputType="text"
+        android:layout_toRightOf="@id/name_txtview" />
+    <TextView
+        android:id="@+id/address_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_txtview"
+        android:layout_marginTop="30dp"
+        android:ems="5"
+        android:text="Address"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/address_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="address"
+        android:layout_marginTop="10dp"
+        android:inputType="textPostalAddress"
+        android:layout_toRightOf="@id/address_txtview"
+        android:layout_below="@id/name_edit_text" />
+
+    <TextView
+        android:id="@+id/phone_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No."
+        android:ems="5"
+        android:textSize="20sp"
+        android:layout_below="@id/address_edit_text"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/phone_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="phone"
+        android:hint="phone no."
+        android:layout_below="@id/address_edit_text"
+        android:layout_toRightOf="@id/phone_txtview"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/college_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College"
+        android:ems="5"
+        android:textSize="20sp"
+        android:layout_below="@id/phone_txtview"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:id="@+id/college_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="college"
+        android:layout_below="@id/phone_edit_text"
+        android:layout_toRightOf="@id/phone_txtview"
+        android:ems="10" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_below="@id/college_txtview"
+        android:layout_marginTop="50dp"
+        android:id="@+id/sb_btn"/>
+    <Button
+        android:id="@+id/disp_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/college_edit_text"
+        android:layout_marginTop="50dp"
+        android:text="Display"
+        android:layout_marginLeft="150dp"
+        android:layout_toRightOf="@id/sb_btn"/>
+</RelativeLayout>
